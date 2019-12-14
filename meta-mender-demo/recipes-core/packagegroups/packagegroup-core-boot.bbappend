@@ -1,4 +1,4 @@
-RDEPENDS_${PN}_append = " hello-mender boot-script"
+RDEPENDS_${PN}_append = " hello-mender boot-script mender-usb"
 
 # This is for tests. Without the tests creating a special file, the service will
 # do nothing.

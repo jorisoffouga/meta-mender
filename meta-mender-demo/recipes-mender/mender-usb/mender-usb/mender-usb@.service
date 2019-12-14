@@ -1,0 +1,7 @@
+[Unit]
+Description= Mender USB Updater
+
+[Service]
+ExecStartPre=/bin/mount /dev/%I /mnt
+ExecStart=/bin/sh -c "mender --install /mnt/*.mender"
+ExecStopPost=/bin/umount /mnt
